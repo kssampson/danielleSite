@@ -30,9 +30,9 @@ const GalleryModal = ( { images, currentIndex, setCurrentIndex, closeModal }: Pr
         <div className="px-14 ">
           <img className="w-full h-auto" src={images[currentIndex].src} alt={images[currentIndex].alt}/>
         </div>
-          <IoMdClose className="absolute right-0 top-0"/>
+          <IoMdClose className="absolute right-0 top-0 cursor-pointer" onClick={closeModal}/>
       </div>
-        <div className="absolute top-0  h-full w-full justify-between items-center flex px-6">
+        <div className="absolute top-0 h-full w-full justify-between items-center flex px-6">
           <button onClick={leftArrowClick}>
             <FaArrowCircleLeft />
           </button>
