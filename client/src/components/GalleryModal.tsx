@@ -28,9 +28,9 @@ const GalleryModal = ( { images, currentIndex, setCurrentIndex, closeModal }: Pr
     <div className="fixed inset-0 z-10 flex items-center justify-center">
       <div className="relative">
         <div className="px-14 ">
-          <img className="w-full h-auto" src={images[currentIndex].src} alt={images[currentIndex].alt}/>
+          <img className="w-full h-auto max-h-" src={images[currentIndex].src} alt={images[currentIndex].alt}/>
         </div>
-          <IoMdClose className="absolute right-0 top-0 cursor-pointer" onClick={closeModal}/>
+          <IoMdClose className="absolute right-16 overflow-y-scroll top-2 cursor-pointer" onClick={closeModal}/>
       </div>
         <div className="absolute top-0 h-full w-full justify-between items-center flex px-6">
           <button onClick={leftArrowClick}>

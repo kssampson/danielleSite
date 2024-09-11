@@ -12,11 +12,12 @@ import Gallery from './pages/menu/Gallery.tsx'
 
 const router = createBrowserRouter([
   {
-    path: "*",
+    path: "/",
     element: <App />,
     children: [
       {
-        path: "landing",
+        index: true,
+        // path: "landing",
         element: <Landing {...config.assets}/>,
       },
       {

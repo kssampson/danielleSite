@@ -65,8 +65,8 @@
 .path {
   stroke-dasharray: 2209.916748046875;
   stroke-dashoffset: 2209.916748046875;
-  animation: LineAnimation 5s ease forwards;
-  animation-delay: .75s;
+  animation: LineAnimation 6s ease forwards;
+  /* animation-delay: .1s; */
 }
 @keyframes LineAnimation {
   to {
