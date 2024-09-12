@@ -1,27 +1,26 @@
+type Props = {
+  infoBlockFirstSection:  {heading: string, body: string };
+  infoBlockSecondSection: {heading: string, body: string };
+}
 
-const InfoBlock = () => {
-
-  const heading = 'Upcoming Events';
-  const bodyText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  const heading2 = 'Some Blah blah ';
-  const bodyText2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+const InfoBlock = ( { infoBlockFirstSection, infoBlockSecondSection }: Props ) => {
 
   return (
     <div className="flex flex-col lg:w-1/2 sm:w-2/3 h-full">
       <div className="flex flex-1 flex-col bg-black opacity-80 p-4">
         <span className="">
-          {heading}
+          {infoBlockFirstSection.heading}
         </span>
         <span className="mt-2">
-          {bodyText}
+          {infoBlockFirstSection.body}
         </span>
       </div>
       <div className="flex flex-1 flex-col bg-slate-300 opacity-80 p-4">
         <span className="text-black text-lg">
-          {heading2}
+          {infoBlockSecondSection.heading}
         </span>
         <span className="mt-2 text-black">
-          {bodyText2}
+          {infoBlockSecondSection.body}
         </span>
       </div>
     </div>

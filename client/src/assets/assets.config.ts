@@ -1,23 +1,8 @@
 
 const config = {
-  assets: {
-    DanAndEllAtPiano: '/photos/danielle-elizabeth/DanAndEllAtPiano.jpg',
-    DanAtGuitar: 'photos/danielle-elizabeth/DanAtGuitar.jpg',
-    EllAtPiano: '/photos/danielle-elizabeth/EllAtPiano.jpg',
-    ExImage1: 'https://picsum.photos/id/237/200/300',
-    ExImage2: 'https://picsum.photos/seed/picsum/200/300',
-    DanielleGuitarVingette: '/photos/danielle-elizabeth/d-at-guitar-vingette.jpg',
-    danielleFlowersLanding: '/photos/landing/danielle-flowers-landing.jpg',
+  landing: {
     danielleFlowersLandingSquare: '/photos/landing/danielleFlowersLandingSquare.png',
-    danielleBigBuilding: '/photos/creative-session/danielleBigBuilding.jpg',
-    danielleDarkLandingSquare: '/photos/landing/danielleDarkLandingSquare.png',
-    danielleDarkLanding: '/photos/landing/danielleDarkLanding.jpg',
     danielleDarkLandingResizeSquare: '/photos/landing/danielleDarkLandingResizeSquare.png',
-    danielleHomeGradient: '/photos/homepage/DanielleHomeGradient.png',
-  },
-  headingAssets: {
-    heading: ['DANIELLE', 'REUTTER-', 'HARRAH'],
-    subHeading: ['musician', 'singer', 'arranger'],
   },
   images: [
     { src: '/photos/danielle-elizabeth/DanAndEllAtPiano.jpg', alt: 'DanAndEllAtPiano' },
@@ -32,6 +17,19 @@ const config = {
     { src: '/photos/landing/danielleDarkLandingResizeSquare.png', alt: 'danielleDarkLandingResizeSquare' },
     { src: '/photos/homepage/DanielleHomeGradient.png', alt: 'DanielleHomeGradient' },
   ],
+  home: {
+    danielleHomeGradient: '/photos/homepage/DanielleHomeGradient.png',
+    heading: ['DANIELLE', 'REUTTER-', 'HARRAH'],
+    subHeading: ['musician', 'singer', 'arranger'],
+    infoBlockFirstSection: {
+      heading: 'Upcoming Events',
+      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    },
+    infoBlockSecondSection: {
+      heading: 'About',
+      body: 'Danielle is a veristile performer of lot\'s of cool stuff. She does all sorts of cool stuff like playing with these cool groups. She has been noted for her cool stuff by cool people and cool organizations. She was notably confirmed for this cool thing after she was awared some cool stuff. She lives in this cool place with her cool family.'
+    }
+  },
 }
 
 

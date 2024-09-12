@@ -5,8 +5,6 @@ import { useNavigate } from "react-router-dom";
 
 type Props = {
   danielleFlowersLandingSquare: string;
-  danielleDarkLandingSquare: string;
-  danielleDarkLanding: string;
   danielleDarkLandingResizeSquare: string;
 }
 

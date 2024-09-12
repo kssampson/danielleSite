@@ -6,9 +6,11 @@ type Props = {
   danielleHomeGradient: string;
   heading: string[];
   subHeading: string[];
+  infoBlockFirstSection: { heading: string, body: string };
+  infoBlockSecondSection: { heading: string, body: string };
 }
 
-const Home = ({ danielleHomeGradient, heading, subHeading }: Props) => {
+const Home = ({ danielleHomeGradient, heading, subHeading, infoBlockFirstSection, infoBlockSecondSection }: Props) => {
 
   const listen = ['Listen'];
 
@@ -22,7 +24,7 @@ const Home = ({ danielleHomeGradient, heading, subHeading }: Props) => {
           <PageHeading heading={heading} subHeading={subHeading}/>
         </section>
         <section className="mb-16">
-          <InfoBlock />
+          <InfoBlock infoBlockFirstSection={infoBlockFirstSection} infoBlockSecondSection={infoBlockSecondSection}/>
         </section>
         <section className="mt-16">
           <PageHeading heading={listen} subHeading={null}/>

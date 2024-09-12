@@ -19,7 +19,7 @@ const router = createBrowserRouter([
       {
         index: true,
         // path: "landing",
-        element: <Landing {...config.assets}/>,
+        element: <Landing {...config.landing}/>,
       },
       {
         path: "pages",
@@ -27,7 +27,14 @@ const router = createBrowserRouter([
         children: [
           {
             path: "home",
-            element: <Home danielleHomeGradient={config.assets.danielleHomeGradient} heading={config.headingAssets.heading} subHeading={config.headingAssets.subHeading} />,
+            element: <Home
+            // danielleHomeGradient={config.landing.danielleHomeGradient}
+            // heading={config.headingAssets.heading}
+            // subHeading={config.headingAssets.subHeading}
+            // infoBlockFirstSection={config.infoBlockFirstSection}
+            // infoBlockSecondSection={config.infoBlockSecondSection}
+            {... config.home}
+            />,
           },
           {
             path: "ensembles",
