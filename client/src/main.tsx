@@ -9,6 +9,7 @@ import Home from './pages/Home.tsx'
 import Pages from './pages/Pages.tsx'
 import Landing from './pages/Landing.tsx'
 import Gallery from './pages/menu/Gallery.tsx'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 
 const router = createBrowserRouter([
   {
@@ -50,7 +51,7 @@ const rootElement = document.getElementById("root");
 
 if (rootElement) {
   ReactDOM.createRoot(rootElement).render(
-    <RouterProvider router={router} />,
+    <><RouterProvider router={router} /><SpeedInsights /></>
   );
 } else {
   throw new Error('Cannot find root element with id "root".');
