@@ -50,7 +50,7 @@ const rootElement = document.getElementById("root");
 
 if (rootElement) {
   ReactDOM.createRoot(rootElement).render(
-    <RouterProvider router={router} />
+    <RouterProvider router={router} />,
   );
 } else {
   throw new Error('Cannot find root element with id "root".');
