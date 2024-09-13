@@ -1,3 +1,25 @@
+export interface CalendarEvent {
+  ensembleName: string;
+  eventName: string;
+  eventDescription: string;
+  date: string;
+  time: string;
+  organizerPurchaseOptionsUrl: string;
+  organizerWebsiteUrl: string;
+  locationDetails: {
+    locationName: string;
+    address: string;
+    city: string;
+    state: string;
+    zip: string;
+    country: string;
+  }
+}
+
+export interface Calendar {
+  calendarUpcoming: CalendarEvent[];
+  archive: CalendarEvent[];
+}
 
 const config = {
   landing: {
@@ -30,8 +52,121 @@ const config = {
       body: 'Danielle is a veristile performer of lot\'s of cool stuff. She does all sorts of cool stuff like playing with these cool groups. She has been noted for her cool stuff by cool people and cool organizations. She was notably confirmed for this cool thing after she was awared some cool stuff. She lives in this cool place with her cool family.'
     }
   },
+  calendar: {
+    upcoming: [
+      {
+        ensembleName: 'Evergreen Ensemble',
+        photo: '/photos/homepage/Evergreen-cross.png',
+        eventName: 'Liturgy',
+        eventDescription: 'Season Opener with the GRAMMY-nomninated work, "The Liturgy of Sain John Chrysostom" by American composser Benedict Sheehan. This landmark work is majestic, intimate, grand, mystical, and everything inbetween.',
+        date: 'Sat, Sep 14',
+        time: '7:00PM - 9:00pm',
+        organizerPurchaseOptionsUrl: 'https://www.ticketleap.events/tickets/evergreen-ensemble/liturgy-edmonds-lynnwood',
+        organizerWebsiteUrl: 'https://www.evergreenensemble.com/',
+        locationDetails: {
+          locationName: 'Trinity Lutheran Church',
+          address: '6215 196th St SW',
+          city: 'Lynnwood',
+          state: 'Washington',
+          zip: '98036',
+          country: 'USA'
+        }
+      },
+      {
+        ensembleName: 'Evergreen Ensemble',
+        photo: '/photos/homepage/Evergreen-cross.png',
+        eventName: 'Liturgy',
+        eventDescription: 'Season Opener with the GRAMMY-nomninated work, "The Liturgy of Sain John Chrysostom" by American composser Benedict Sheehan. This landmark work is majestic, intimate, grand, mystical, and everything inbetween.',
+        date: 'Sat, Sep 15',
+        time: '3:00PM - 5:00pm',
+        organizerPurchaseOptionsUrl: 'https://www.ticketleap.events/tickets/evergreen-ensemble/liturgy-edmonds-lynnwood',
+        organizerWebsiteUrl: 'https://www.evergreenensemble.com/',
+        locationDetails: {
+          locationName: 'Holy Rosary Catholic Church',
+          address: '4139 42nd Ave SW',
+          city: 'Seattle',
+          state: 'Washington',
+          zip: '98116',
+          country: 'USA'
+        }
+      },
+      {
+        ensembleName: 'Evergreen Ensemble',
+        photo: '/photos/homepage/Evergreen-christmas.png',
+        eventName: 'Christmas',
+        eventDescription: 'Come hear iconic choral Christmas classics from composers like Morten Lauridsen, Norman Luboff, and John Gardner, as well as newer works from Ola Gjeilo, Sarah Quartel, Jesican French, and many more!',
+        date: 'Fri, Dec 13',
+        time: '7:00PM - 9:00pm',
+        organizerPurchaseOptionsUrl: 'https://www.ticketleap.events/tickets/evergreen-ensemble/christmas-edmonds-lynnwood',
+        organizerWebsiteUrl: 'https://www.evergreenensemble.com/',
+        locationDetails: {
+          locationName: 'Trinity Lutheran Church',
+          address: '6215 196th St SW',
+          city: 'Lynnwood',
+          state: 'Washington',
+          zip: '98036',
+          country: 'USA'
+        }
+      },
+      {
+        ensembleName: 'Evergreen Ensemble',
+        photo: '/photos/homepage/Evergreen-christmas.png',
+        eventName: 'Christmas',
+        eventDescription: 'Come hear iconic choral Christmas classics from composers like Morten Lauridsen, Norman Luboff, and John Gardner, as well as newer works from Ola Gjeilo, Sarah Quartel, Jesican French, and many more!',
+        date: 'Sun, Dec 15',
+        time: '3:00PM - 5:00pm',
+        organizerPurchaseOptionsUrl: 'https://www.ticketleap.events/tickets/evergreen-ensemble/christmas-seattle',
+        organizerWebsiteUrl: 'https://www.evergreenensemble.com/',
+        locationDetails: {
+          locationName: 'Trinity Episcopal Church',
+          address: '609 8th Ave',
+          city: 'Seattle',
+          state: 'Washington',
+          zip: '98104',
+          country: 'USA'
+        }
+      },
+      {
+        ensembleName: 'Evergreen Ensemble',
+        photo: '/photos/homepage/Evergreen-requiem.png',
+        eventName: 'Requiem',
+        eventDescription: 'Come hear Dale Trumbore\'s "How to Go On" with Herbert Howell\'s timeless "Requiem". These two works for a cappella choir are each tied to the death of a loved one for either the librettist or composer, and offer unique musical perspectives on the process of grief and acceptance that follows such a loss. Come hear both an established masterwork, as well as a landmark work from an up and coming composer',
+        date: 'Sat, March 8',
+        time: '7:00PM - 10:00pm',
+        organizerPurchaseOptionsUrl: 'https://www.ticketleap.events/tickets/evergreen-ensemble/requiem-edmonds-lynnwood',
+        organizerWebsiteUrl: 'https://www.evergreenensemble.com/',
+        locationDetails: {
+          locationName: 'Trinity Lutheran Church',
+          address: '6215 196th St SW',
+          city: 'Lynnwood',
+          state: 'Washington',
+          zip: '98036',
+          country: 'USA'
+        }
+      },
+      {
+        ensembleName: 'Evergreen Ensemble',
+        photo: '/photos/homepage/Evergreen-requiem.png',
+        eventName: 'Requiem',
+        eventDescription: 'Come hear Dale Trumbore\'s "How to Go On" with Herbert Howell\'s timeless "Requiem". These two works for a cappella choir are each tied to the death of a loved one for either the librettist or composer, and offer unique musical perspectives on the process of grief and acceptance that follows such a loss. Come hear both an established masterwork, as well as a landmark work from an up and coming composer',
+        date: 'Sun, March 9',
+        time: '3:00PM - 5:00pm',
+        organizerPurchaseOptionsUrl: 'https://www.ticketleap.events/tickets/evergreen-ensemble/requiem-seattle',
+        organizerWebsiteUrl: 'https://www.evergreenensemble.com/',
+        locationDetails: {
+          locationName: 'Trinity Episcopal Church',
+          address: '609 8th Ave',
+          city: 'Seattle',
+          state: 'Washington',
+          zip: '98104',
+          country: 'USA'
+        }
+      }
+    ],
+    archive: [
+
+    ]
+  }
 }
-
-
 
 export default config;

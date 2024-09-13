@@ -28,12 +28,8 @@ const router = createBrowserRouter([
           {
             path: "home",
             element: <Home
-            // danielleHomeGradient={config.landing.danielleHomeGradient}
-            // heading={config.headingAssets.heading}
-            // subHeading={config.headingAssets.subHeading}
-            // infoBlockFirstSection={config.infoBlockFirstSection}
-            // infoBlockSecondSection={config.infoBlockSecondSection}
-            {... config.home}
+            {...config.home}
+            calendarUpcoming={config.calendar.upcoming}
             />,
           },
           {
