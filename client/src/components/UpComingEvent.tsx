@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { CalendarEvent } from "../assets/assets.config";
 import { FaAngleDown } from "react-icons/fa";
-import { FaAngleUp } from "react-icons/fa";
 
 type Props = {
   event: CalendarEvent;
