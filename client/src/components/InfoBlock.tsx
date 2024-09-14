@@ -18,7 +18,9 @@ const InfoBlock = ( { infoBlockFirstSection, infoBlockSecondSection, calendarUpc
         <span className="mt-2">
           {calendarUpcoming.map((event) => {
             return (
-              <UpcomingEvent event={event}/>
+              <div>
+                <UpcomingEvent event={event}/>
+              </div>
             )
           })}
         </span>

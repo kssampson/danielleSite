@@ -49,7 +49,7 @@ const config = {
     },
     infoBlockSecondSection: {
       heading: 'About',
-      body: 'Danielle is a veristile performer of lot\'s of cool stuff. She does all sorts of cool stuff like playing with these cool groups. She has been noted for her cool stuff by cool people and cool organizations. She was notably confirmed for this cool thing after she was awared some cool stuff. She lives in this cool place with her cool family.'
+      body: 'Danielle Reutter-Harrah has performed at the Boston Early Music Festival, with Seattle Symphony Orchestra, Seattle Opera, California Bach Society, American Bach Soloists, Baroque Chamber Orchestra of Colorado, Alabama Symphony, and Early Music Vancouver, among others. She most recently sang the role of Belinda in Baroque Chamber Orchestra of Colorado\’s semi-staged rendition of Purcell\’s Dido and Aeneas. Her repertoire spans Brahms, Bach, Monteverdi, Handel, Clara Schumann and Fanny Mendelssohn, and she is a founding member of the voice and plucked strings duo Jarring Sounds, with Adam Cockerham on guitar, theorbo, Baroque guitar and lute. She sings frequently with Seattle\’s Byrd Ensemble and Pacific MusicWorks. Danielle received her Bachelor of Music degree from the University of Denver\’s Lamont School of Music and her Master of Music degree from the San Francisco Conservatory of Music.'
     }
   },
   calendar: {
