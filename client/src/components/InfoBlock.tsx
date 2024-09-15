@@ -15,7 +15,7 @@ const InfoBlock = ( { infoBlockFirstSection, infoBlockSecondSection, calendarUpc
         <span className="">
           {infoBlockFirstSection.heading}
         </span>
-        <span className="mt-2 overflow-y-auto max-h-80">
+        <span className="mt-2 mb-2 overflow-y-auto max-h-80">
           {calendarUpcoming.map((event) => {
             return (
               <div>
@@ -24,6 +24,9 @@ const InfoBlock = ( { infoBlockFirstSection, infoBlockSecondSection, calendarUpc
             )
           })}
         </span>
+        <div className="flex justify-center py-2">
+          <button className="flex justify-center rounded-none p-2 lg:p-2 bg-slate-300 text-black hover:text-yellow-600">View All</button>
+        </div>
       </div>
       <div className="flex flex-1 flex-col bg-slate-300 opacity-80 p-4">
         <span className="text-black text-lg">

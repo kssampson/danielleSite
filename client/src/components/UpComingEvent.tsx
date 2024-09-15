@@ -35,7 +35,7 @@ const UpcomingEvent = ( { event }: Props ) => {
               </div>
             </div>
           </div>
-          <button className="rounded-none p-2 hover:text-yellow-600 text-gray-300" onClick={() => handleTickets(event.organizerPurchaseOptionsUrl)}>Tickets</button>
+          <button className="rounded-none p-2 hover:text-yellow-600 text-gray-300 bg-black" onClick={() => handleTickets(event.organizerPurchaseOptionsUrl)}>Tickets</button>
         </div>
         <span className="text-black">
           {expandEventDetailClicked && (
