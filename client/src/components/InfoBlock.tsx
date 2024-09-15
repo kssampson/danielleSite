@@ -15,7 +15,7 @@ const InfoBlock = ( { infoBlockFirstSection, infoBlockSecondSection, calendarUpc
         <span className="">
           {infoBlockFirstSection.heading}
         </span>
-        <span className="mt-2">
+        <span className="mt-2 overflow-y-auto max-h-80">
           {calendarUpcoming.map((event) => {
             return (
               <div>

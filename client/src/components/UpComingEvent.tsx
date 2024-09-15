@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { CalendarEvent } from "../assets/assets.config";
-import { FaAngleDown } from "react-icons/fa";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+import UpComingEventExpanded from "./UpComingEventExpanded";
 
 type Props = {
   event: CalendarEvent;
@@ -17,38 +18,32 @@ const UpcomingEvent = ( { event }: Props ) => {
   const [expandEventDetailClicked, setExpandEventDetailClicked] = useState<boolean>(false);
 
   return (
-    <div className="flex flex-1 bg-slate-300 opacity-80 p-2 justify-between">
+    <div className="flex flex-1 flex-col bg-slate-300 opacity-80 p-2">
       <div
       className="flex flex-col border-b-2 border-yellow-500 pb-2"
       onClick={() => setExpandEventDetailClicked(!expandEventDetailClicked)}
       >
-        <span className="text-black text-md">
-          {event.date}
-        </span>
-        <span className="text-black">
-          <div className="flex">
-            {`${event.ensembleName}: ${event.eventName}`}
-            <div className="p-1">
-              <FaAngleDown />
+        <div className="flex justify-between text-black text-md cursor-pointer">
+          <div className="flex flex-col hover:text-yellow-600">
+            <span>
+              {event.date}
+            </span>
+            <div className="flex">
+              {`${event.ensembleName}: ${event.eventName}`}
+              <div className="p-1">
+                {expandEventDetailClicked ? (<FaAngleUp />) : (<FaAngleDown />)}
+              </div>
             </div>
           </div>
+          <button className="rounded-none p-2 hover:text-yellow-600 text-gray-300" onClick={() => handleTickets(event.organizerPurchaseOptionsUrl)}>Tickets</button>
+        </div>
+        <span className="text-black">
           {expandEventDetailClicked && (
-            <>
-            <div className="flex flex-col pt-2 pr-2">
-              <span className="text-black">
-                {` Come join us at ${event.locationDetails.locationName}! `}
-                {event.eventDescription}
-              </span>
-              <span className="pt-2 pr-2">
-              {` ${event.locationDetails.address} ${event.locationDetails.city}, ${event.locationDetails.state} ${event.locationDetails.zip}, ${event.locationDetails.country}`}
-              </span>
-            </div>
-            </>
+            <UpComingEventExpanded event={event}/>
           )}
         </span>
       </div>
-      {}
-      <button className="rounded-none p-2" onClick={() => handleTickets(event.organizerPurchaseOptionsUrl)}>Tickets</button>
+      {/* <button className="rounded-none p-2" onClick={() => handleTickets(event.organizerPurchaseOptionsUrl)}>Tickets</button> */}
     </div>
   )
 }
