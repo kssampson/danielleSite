@@ -21,6 +21,17 @@ export interface Calendar {
   archive: CalendarEvent[];
 }
 
+export interface InfoBlockSecondSection {
+  heading: string;
+    body1: string;
+    kqedBody: string;
+    classicalSonomaBody: string;
+    kqedQuote: string;
+    kqedQuoteURL: string;
+    classicalSonomaQuote: string;
+    classicalSonomaQuoteURL: string;
+}
+
 const config = {
   landing: {
     danielleFlowersLandingSquare: '/photos/landing/danielleFlowersLandingSquare.png',
@@ -44,52 +55,22 @@ const config = {
     heading: ['DANIELLE', 'REUTTER-', 'HARRAH'],
     subHeading: ['musician', 'singer', 'arranger'],
     infoBlockFirstSection: {
-      heading: 'Upcoming Events',
+      heading: 'Events',
       body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     infoBlockSecondSection: {
       heading: 'About',
-      body: 'Danielle Reutter-Harrah has performed at the Boston Early Music Festival, with Seattle Symphony Orchestra, Seattle Opera, California Bach Society, American Bach Soloists, Baroque Chamber Orchestra of Colorado, Alabama Symphony, and Early Music Vancouver, among others. She most recently sang the role of Belinda in Baroque Chamber Orchestra of Colorado\’s semi-staged rendition of Purcell\’s Dido and Aeneas. Her repertoire spans Brahms, Bach, Monteverdi, Handel, Clara Schumann and Fanny Mendelssohn, and she is a founding member of the voice and plucked strings duo Jarring Sounds, with Adam Cockerham on guitar, theorbo, Baroque guitar and lute. She sings frequently with Seattle\’s Byrd Ensemble and Pacific MusicWorks. Danielle received her Bachelor of Music degree from the University of Denver\’s Lamont School of Music and her Master of Music degree from the San Francisco Conservatory of Music.'
-    }
+      body1: 'Danielle Reutter-Harrah has performed and recorded with premier and grammy winning ensembles, symphony orchestras, and innovative contemporary groups throughout the United States and Germany.',
+      classicalSonomaBody: 'Known for "[her] expressive, silvery voice and outstanding technical finesse", Danielle is a sought after artist in baroque and early music.',
+      kqedBody: 'As a contemporary performer and recording artist, Danielle is noted for her "elastic vocals... [that] nail unexpected harmonies [and] fill up every last inch of sonic space."',
+      kqedQuote: '-KQED',
+      kqedQuoteURL: 'https://www.kqed.org/arts/10436308/50-shades-of-pop-makeunders-hidden-hooks',
+      classicalSonomaQuote: '-classicalsonoma.org',
+      classicalSonomaQuoteURL: 'https://classicalsonoma.org/reviews/?reviewid=961'
+    },
   },
   calendar: {
     upcoming: [
-      {
-        ensembleName: 'Evergreen Ensemble',
-        photo: '/photos/homepage/Evergreen-cross.png',
-        eventName: 'Liturgy',
-        eventDescription: 'Season Opener with the GRAMMY-nomninated work, "The Liturgy of Sain John Chrysostom" by American composser Benedict Sheehan. This landmark work is majestic, intimate, grand, mystical, and everything inbetween.',
-        date: 'Sat, Sep 14',
-        time: '7:00PM - 9:00pm',
-        organizerPurchaseOptionsUrl: 'https://www.ticketleap.events/tickets/evergreen-ensemble/liturgy-edmonds-lynnwood',
-        organizerWebsiteUrl: 'https://www.evergreenensemble.com/',
-        locationDetails: {
-          locationName: 'Trinity Lutheran Church',
-          address: '6215 196th St SW',
-          city: 'Lynnwood',
-          state: 'Washington',
-          zip: '98036',
-          country: 'USA'
-        }
-      },
-      {
-        ensembleName: 'Evergreen Ensemble',
-        photo: '/photos/homepage/Evergreen-cross.png',
-        eventName: 'Liturgy',
-        eventDescription: 'Season Opener with the GRAMMY-nomninated work, "The Liturgy of Sain John Chrysostom" by American composser Benedict Sheehan. This landmark work is majestic, intimate, grand, mystical, and everything inbetween.',
-        date: 'Sat, Sep 15',
-        time: '3:00PM - 5:00pm',
-        organizerPurchaseOptionsUrl: 'https://www.ticketleap.events/tickets/evergreen-ensemble/liturgy-edmonds-lynnwood',
-        organizerWebsiteUrl: 'https://www.evergreenensemble.com/',
-        locationDetails: {
-          locationName: 'Holy Rosary Catholic Church',
-          address: '4139 42nd Ave SW',
-          city: 'Seattle',
-          state: 'Washington',
-          zip: '98116',
-          country: 'USA'
-        }
-      },
       {
         ensembleName: 'Evergreen Ensemble',
         photo: '/photos/homepage/Evergreen-christmas.png',
@@ -164,9 +145,48 @@ const config = {
       }
     ],
     archive: [
-
+      {
+        ensembleName: 'Evergreen Ensemble',
+        photo: '/photos/homepage/Evergreen-cross.png',
+        eventName: 'Liturgy',
+        eventDescription: 'Season Opener with the GRAMMY-nomninated work, "The Liturgy of Sain John Chrysostom" by American composser Benedict Sheehan. This landmark work is majestic, intimate, grand, mystical, and everything inbetween.',
+        date: 'Sat, Sep 14',
+        time: '7:00PM - 9:00pm',
+        organizerPurchaseOptionsUrl: 'https://www.ticketleap.events/tickets/evergreen-ensemble/liturgy-edmonds-lynnwood',
+        organizerWebsiteUrl: 'https://www.evergreenensemble.com/',
+        locationDetails: {
+          locationName: 'Trinity Lutheran Church',
+          address: '6215 196th St SW',
+          city: 'Lynnwood',
+          state: 'Washington',
+          zip: '98036',
+          country: 'USA'
+        }
+      },
+      {
+        ensembleName: 'Evergreen Ensemble',
+        photo: '/photos/homepage/Evergreen-cross.png',
+        eventName: 'Liturgy',
+        eventDescription: 'Season Opener with the GRAMMY-nomninated work, "The Liturgy of Sain John Chrysostom" by American composser Benedict Sheehan. This landmark work is majestic, intimate, grand, mystical, and everything inbetween.',
+        date: 'Sat, Sep 15',
+        time: '3:00PM - 5:00pm',
+        organizerPurchaseOptionsUrl: 'https://www.ticketleap.events/tickets/evergreen-ensemble/liturgy-edmonds-lynnwood',
+        organizerWebsiteUrl: 'https://www.evergreenensemble.com/',
+        locationDetails: {
+          locationName: 'Holy Rosary Catholic Church',
+          address: '4139 42nd Ave SW',
+          city: 'Seattle',
+          state: 'Washington',
+          zip: '98116',
+          country: 'USA'
+        }
+      },
     ]
-  }
+  },
+  bio : {
+    body: 'Danielle Reutter-Harrah has performed at the Boston Early Music Festival, with Seattle Symphony Orchestra, Seattle Opera, California Bach Society, American Bach Soloists, Baroque Chamber Orchestra of Colorado, Alabama Symphony, and Early Music Vancouver, among others. She most recently sang the role of Belinda in Baroque Chamber Orchestra of Colorado\’s semi-staged rendition of Purcell\’s Dido and Aeneas. Her repertoire spans Brahms, Bach, Monteverdi, Handel, Clara Schumann and Fanny Mendelssohn, and she is a founding member of the voice and plucked strings duo Jarring Sounds, with Adam Cockerham on guitar, theorbo, Baroque guitar and lute. She sings frequently with Seattle\’s Byrd Ensemble and Pacific MusicWorks. Danielle received her Bachelor of Music degree from the University of Denver\’s Lamont School of Music and her Master of Music degree from the San Francisco Conservatory of Music.'
+  },
+  bodyTwo: 'Danielle Reutter-Harrah has performed and recorded with premier and grammy winning ensembles, symphony orchestras, and innovative contemporary groups throughout the United States and Germany. Known for her "expressive, silvery voice and outstanding technical finesse (classicalsonoma.org)", Danielle is a sought after artist in baroque and early music. As a contemporary performer and recording artist, Danielle lends her art with "elastic vocals [that] nail unexpected harmonies [and] fill up every last inch of sonic space (kqed.org)."'
 }
 
 export default config;

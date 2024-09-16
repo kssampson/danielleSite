@@ -1,4 +1,4 @@
-import { CalendarEvent } from "../assets/assets.config";
+import { CalendarEvent, InfoBlockSecondSection } from "../assets/assets.config";
 import InfoBlock from "../components/InfoBlock";
 import PageHeading from "../components/PageHeading";
 import SpotIFrame from "../components/SpotIFrame";
@@ -8,7 +8,7 @@ type Props = {
   heading: string[];
   subHeading: string[];
   infoBlockFirstSection: { heading: string, body: string };
-  infoBlockSecondSection: { heading: string, body: string };
+  infoBlockSecondSection: InfoBlockSecondSection;
   calendarUpcoming: CalendarEvent[];
 }
 
@@ -22,7 +22,7 @@ const Home = ({ danielleHomeGradient, heading, subHeading, infoBlockFirstSection
         <img src={danielleHomeGradient} alt="background" className="w-full h-full object-cover"/>
       </div>
       <div className="relative z-10 w-full max-w-screen-lg">
-        <section className="mb-16">
+        <section className="mb-20">
           <PageHeading heading={heading} subHeading={subHeading}/>
         </section>
         <section className="mb-16">
